@@ -7,8 +7,9 @@ jobs:
     working_directory: ~/fr.univavignon.pokedex.api
     steps:
       - checkout
-      - run: Run Unit Tests with Maven
-        command: mvn test
+      - run:
+          name: Run Unit Tests with Maven
+          command: mvn test
 
 workflows:
   version: 2

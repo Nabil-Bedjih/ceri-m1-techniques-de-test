@@ -18,7 +18,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run:
+      - run: "Executing Unit Tests"
         command: "mvn test"
 
 workflows:
@@ -29,3 +29,4 @@ workflows:
           filters:
             branches:
               only: master
+

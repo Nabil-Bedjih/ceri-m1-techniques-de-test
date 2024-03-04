@@ -1,25 +1,15 @@
-machine:
-  java:
-    version: openjdk8
-general:
-  branches:
-    only:
-      - master
-
-test:
-  override:
-    - mvn test
 version: 2.1
 
 jobs:
   build:
     docker:
-      - image: cimg/openjdk:8.0
-    working_directory: ~/repo
+      - image: circleci/openjdk:8-jdk
+    working_directory: ~/fr.univavignon.pokedex.api
     steps:
       - checkout
       - run:
-        command: "mvn test"
+          name: Run Unit Tests with Maven
+          command: mvn test
 
 workflows:
   version: 2
@@ -29,3 +19,4 @@ workflows:
           filters:
             branches:
               only: master
+

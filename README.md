@@ -34,12 +34,12 @@ Le rendu des TPs se fait au rythme suivant :
 Pour chaque rendu vous devez créer un tag à partir du commit qui correspond à la complétion du TP.  
 Si vous ne spécifiez pas de tag, le dernier commit à la date-heure de la fin de séance sera celui considéré.
 
-Nom et Prénom
+## Nom et Prénom
 
 Bedjih
 Nabil
 
-Groupe
+## Groupe
 M1 ILSEN Classique
 
 [^1]: Si vous n’êtes vraiment pas à l’aise avec cet outil nous vous conseillons quand même vivement de vous y mettre.
